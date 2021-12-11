@@ -46,7 +46,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 " Coc plugins
 source $HOME/.config/nvim/plug-config/coc.vim
 
-" CocInstall coc-json coc-spell-checker coc-prettier coc-git coc-pyright coc-docker 
+" CocInstall coc-json coc-spell-checker coc-prettier coc-git coc-pyright coc-docker coc-json
 
 " Theme
 colorscheme gruvbox
