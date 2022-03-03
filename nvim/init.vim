@@ -37,6 +37,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'sansyrox/vim-python-virtualenv'
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 " Plug 'SirVer/ultisnips'
 " Plug 'tmhedberg/SimpylFold'          " Code folding (zo: open, zc: close)
 
@@ -73,7 +78,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemode=':t'
 nmap <leader>[ :bp<CR>              " Default leader is \
 nmap <leader>] :bn<CR>
-nmap <C-w> :bd<CR>
+nmap <C-q> :bd<CR>
 
 
 " python alias (,p runs python on script. ,t times python script)
