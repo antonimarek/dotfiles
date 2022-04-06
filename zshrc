@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Add homebrew source
+export PATH=/opt/homebrew/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH="/home/antoni/.oh-my-zsh"
+export ZSH="/Users/antoni/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
