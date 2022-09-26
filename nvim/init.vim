@@ -3,7 +3,8 @@
 set encoding=utf-8
 set number relativenumber
 
-syntax on
+syntax enable
+
 set noswapfile
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -42,6 +43,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
 " Plug 'SirVer/ultisnips'
 " Plug 'tmhedberg/SimpylFold'          " Code folding (zo: open, zc: close)
 
@@ -88,3 +90,8 @@ nmap ,t :w<CR>:!time python3 %<CR>
 " air-line
 let g:airline_powerline_fonts = 1
 
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
