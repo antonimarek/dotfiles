@@ -1,0 +1,27 @@
+/* HEADER settings */
+.cm-header-1, .markdown-preview-view h1 {color: #348888; font-weight: bold;}
+.cm-header-2, .markdown-preview-view h2 {color: #22BABB; font-weight: bold;}
+.cm-header-3, .markdown-preview-view h3 {color: #9EF8EE;}
+.cm-header-4, .markdown-preview-view h4 {color: #FA7F08;}
+.cm-header-4, .markdown-preview-view h4 {color: #F24405;}
+
+
+/* TAGS settings */
+.cm-s-obsidian span.cm-tag-todo,
+.tag[href^="#todo"] {
+  color: #1600A8;
+  background-color: #F5DA2F;
+}
+
+/* BLOCK QUOTES settings */
+.markdown-preview-view blockquote {
+  position: relative;
+  background-color: rgba(0,0,0,0.1);
+  border-color: transparent;
+  font-weight: bold;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 36px;
+  padding-left: 30px;
+  border-left: 3px solid white;
+}
