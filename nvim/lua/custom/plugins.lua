@@ -45,6 +45,7 @@ local plugins = {
         "black",
         "mypy",
         "isort",
+        "prettier",
       },
     },
   },
@@ -60,6 +61,30 @@ local plugins = {
     config = function ()
       require "custom.configs.conform"
     end,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults
+        "vim",
+        "lua",
+        "comment",
+        -- python dev
+        "python",
+
+        -- web dev
+        "typescript",
+        "javascript",
+        "json",
+        "tsx",
+        "html",
+        "css",
+
+        -- rust dev
+        "rust",
+      },
+    },
   },
 }
 return plugins
