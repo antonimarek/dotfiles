@@ -36,6 +36,18 @@ M.dap_python = {
     }
   }
 }
+
+M.crates = {
+  plugin = true,
+  n = {
+    ["<leader>rcu"] = {
+      function ()
+        require('crates').upgrade_all_crates()
+      end,
+      "update crates"
+    }
+  }
+}
 -- more keybinds!
 
 return M
